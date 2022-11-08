@@ -32,7 +32,7 @@ tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf(
 		  "-Xjsr305=strict", // Strict interpretation of nullability annotations in jqwik API
-		  "-Xemit-jvm-type-annotations" // Enable nnotations on type variables
+		  "-Xemit-jvm-type-annotations" // Enable annotations on type variables
 		)
         jvmTarget = "11" // 1.8 or above
         javaParameters = true // Get correct parameter names in jqwik reporting
